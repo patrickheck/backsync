@@ -1,0 +1,11 @@
+- **/files/tmp/*
+- **/files/cache/*
+- **/_temp/*
+- **/piwik/tmp/*
+- **/filestorage/*
+- **/Data.fs
+- **/adminPassword.txt
+- **/.installed.cfg
+- **/nohup.out
+- **/*.log
+- **/zopectlsock

@@ -28,6 +28,7 @@ do
 	then
 		echo "Files are the same. Creating link to last version"
 		ln -fv `readlink "$CURRENT"` "$NEW"
+		touch "$NEW"
 	else
 		echo "Files differ."
 	fi

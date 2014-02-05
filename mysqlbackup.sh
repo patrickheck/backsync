@@ -13,6 +13,10 @@ EXPIRING_DATE=`date "+%Y-%m-%d" -d "${MAX_BACKUP_DAYS} days ago"`
 # always exit if a command fails 
 set -o errexit
 
+CONFIG_FILE="${BASEDIR}/config/backup.conf"
+
+echo "loading configuration from ${CONFIG_FILE}"
+
 # Source configuration file
 if [ -f $CONFIG_FILE ]; then
     . $CONFIG_FILE

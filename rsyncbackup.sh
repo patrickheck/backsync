@@ -9,7 +9,7 @@ echo $(dirname $0)
 echo "Starting incremental rsync backup"
 DATE=`date "+%Y-%m-%dT%H-%M-%S"`
 
-CONFIG_FILE="${BASEDIR}/backup.conf"
+CONFIG_FILE="${BASEDIR}/config/backup.conf"
 
 echo "loading configuration from ${CONFIG_FILE}"
 
@@ -21,10 +21,10 @@ fi
 
 
 # read the dirs to be backed up from here
-RSYNCDIRS="${BASEDIR}/rsyncdirs"
+RSYNCDIRS="${BASEDIR}/config/rsyncdirs.conf"
 
 # files and directories to be excluded
-RSYNCRULES="${BASEDIR}/rsyncrules"
+RSYNCRULES="${BASEDIR}/config/rsyncrules.conf"
 
 MAX_BACKUP_DAYS=45
 # This is the day which's backups will expire today

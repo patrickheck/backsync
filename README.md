@@ -1,6 +1,9 @@
 Backsync Shell Backup Tools
 ===========================
 
+A Shell Backup Script for Databases and Files that uses Rsync.
+Just setup your origin and destination and run the scripts.
+
 Contents
 --------
 * rsyncbackup.sh - shell script, that runs backups to a remote server using rsync

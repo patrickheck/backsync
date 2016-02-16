@@ -1,0 +1,9 @@
+MAX_BACKUP_DAYS=25
+
+BACKUP_SERVER="user@targethost"
+BACKUP_DIR="/home/user/backup/`hostname`"
+
+MYSQL_DATABASES="database_one db_two"
+MYSQL_USERNAME="dbuser"
+MYSQL_PASSWORD="PASSWORD"
+MYSQL_BACKUP_DIR="/home/user/backup/db"
